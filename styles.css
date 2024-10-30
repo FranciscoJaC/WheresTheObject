@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ada295;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.menu {
+  text-align: center;
+  background-color: #e8e7e4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  color: #5e3c58;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+button.nivel-btn {
+  background-color: #5e3c58;
+  color: #e8e7e4;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.nivel-btn:hover {
+  background-color: #2d0345;
+}
+
+button.jugar-btn.active:hover {
+  background-color: #2d0345;
+}
+
+button.nivel-btn.active {
+  background-color: #fab905; /* Color rojo para el botón activo */
+  outline: 2px solid #5e3c58;
+}
+
+#jugar-btn {
+  background-color: #5e3c58;
+  color: #e8e7e4;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#jugar-btn:hover {
+  background-color: #2d0345;
+}
+
+#jugar-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.nivel-container {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.nivel-container img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #5e3c58;
+  border-radius: 8px;
+}
